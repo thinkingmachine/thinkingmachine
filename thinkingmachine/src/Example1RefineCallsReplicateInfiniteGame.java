@@ -42,7 +42,7 @@ public class Example1RefineCallsReplicateInfiniteGame {
 		Object determinePayout=null;
 		
 		Object PayoutResults=null; //Calculate the payout results based
-							//on the cost and the returns from the prgrame
+							//on the cost and the returns from the program
 		
 		//Run the program here!!!
 		//We imagine we run the program
