@@ -4,7 +4,7 @@ public class Example1RefineCallsReplicateInfiniteGame {
 	
 	/*
 	 * 
-	 * Refine the program based on some payout thresholds
+	 * Refine the program based on some pay out thresholds
 	 * 
 	 */
 	public static void refine(Object somePayoutResults) {
@@ -20,7 +20,7 @@ public class Example1RefineCallsReplicateInfiniteGame {
 		
 		Object program = null;  //At present the program does nothing
 		
-		//Examine the payout results
+		//Examine the pay out results
 		//Figure out if we need to alter the program!
 		//For now do nothing
 		
@@ -41,7 +41,7 @@ public class Example1RefineCallsReplicateInfiniteGame {
 		Object determineCost=null;
 		Object determinePayout=null;
 		
-		Object PayoutResults=null; //Calculate the payout results based
+		Object PayoutResults=null; //Calculate the pay out results based
 							//on the cost and the returns from the program
 		
 		//Run the program here!!!
