@@ -2,5 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/CDC-1.0%Foundation-1.0"/>
+	<classpathentry kind="lib" path="libs/actor/akka-actor_2.11-2.3.11.jar"/>
+	<classpathentry kind="lib" path="libs/actor/scala-library-2.11.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
