@@ -3,6 +3,11 @@ package thinkingmachine.examples.example6;
 import akka.actor.Props;
 import akka.actor.UntypedActor;
 import akka.actor.ActorRef;
+
+//
+// main class is akka.Main
+// program arguments is thinkingmachine.examples.example6.HelloWorld
+//
  
 public class HelloWorld extends UntypedActor {
  
