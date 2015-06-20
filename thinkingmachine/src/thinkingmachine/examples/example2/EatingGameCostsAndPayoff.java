@@ -9,6 +9,7 @@ public class EatingGameCostsAndPayoff {
 	HashMap games = new HashMap();
 	HashMap choices = new HashMap();
 	HashMap program = new HashMap();
+	HashMap goals = new HashMap();
 
 	/*
 	 * 
@@ -17,30 +18,44 @@ public class EatingGameCostsAndPayoff {
 	 */
 	public void initialize() {
 		
-		//just one game
-		games.put("GAME","EAT");
+
 		
+
+		
+		//high level goal
+		
+		goals.put("STAY ALIVE","ACTIVE");
+		
+
+		//just one associated game
+		
+		games.put("STAY ALIVE","EAT");
+
+		//program
+		//the goal is to eat and maximise payoff
+		
+		program.put("GAME","EAT");
+
 		//game choices
 		choices.put("EAT","CABBAGE");
 		choices.put("EAT","CELEERY");
 		
+
 		//costs
 		
 		//it's easier to find celery than cabbage
 		
-		costs.put("CABBAGE","100");
-		costs.put("CELERY", "50");
+		costs.put("EAT_LOCATE_CABBAGE","100");
+		costs.put("EAT_LOCATE_CELERY", "50");
 		
-		//the payoff to the system when it's eaten
-		//values are not accurate!
+		//the payoff to the system when it's theoretically eaten
 		
-		payoff.put("CABBAGE", "50");
-		payoff.put("CELERY", "10");
+		payoff.put("EAT_ENERGY_CABBAGE", "50");
+		payoff.put("EAT_ENERGY_CELERY", "10");
 		
-		//program
-		//the goal is to eat and maximise payoff
+		//so it's easier to find celery
+		//but the payoff is higher for cabbage
 		
-		program.put("GOAL","EAT");
 	}
 	
 	/*
