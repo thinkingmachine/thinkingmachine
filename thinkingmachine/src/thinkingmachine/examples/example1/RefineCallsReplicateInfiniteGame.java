@@ -1,5 +1,6 @@
+package thinkingmachine.examples.example1;
 
-public class Example1RefineCallsReplicateInfiniteGame {
+public class RefineCallsReplicateInfiniteGame {
 	
 	
 	/*
@@ -60,7 +61,7 @@ public class Example1RefineCallsReplicateInfiniteGame {
 		
 		Object theMostSimpleProgramEverBeginningLife=null;
 
-		Example1RefineCallsReplicateInfiniteGame.
+		RefineCallsReplicateInfiniteGame.
 			replicate(theMostSimpleProgramEverBeginningLife);
 		
 
