@@ -14,10 +14,13 @@ public class CopyOfEatingGameFailedGamesCostsAndPayoff {
 	static HashMap typeChoice = new HashMap();
 	static HashMap personalityPreference = new HashMap();
 	static HashMap timingChoice = new HashMap();
-	static int age = 1;  //A replicate needs to know how old it is to time things
-	static HashMap failedGames = new HashMap();  //sometimes we run out of something
-												//due to climate change
-												//payout is zero so we discontinue
+	static int age = 1; // A replicate needs to know how old it is to time
+						// things
+	static HashMap failedGames = new HashMap(); // sometimes we run out of
+												// something
+												// due to climate change
+												// payout is zero so we
+												// discontinue
 
 	/*
 	 * 
@@ -37,41 +40,42 @@ public class CopyOfEatingGameFailedGamesCostsAndPayoff {
 		// the goal is to eat and maximise payoff
 
 		program.put("GAME", "EAT");
-		
-		//type of eater
-		//vegetables or other wise
-		
-		//Using this approach a replicate-refine can switch
-		//pay off functions as it switched type
-		
-		//if one is a carnivore one must hunt which
-		//needs a different payoff function
-		
-		//in nature stem cells can switch from one type to another
-		//cells turn into skin cells, liver cells and so on
-		
+
+		// type of eater
+		// vegetables or other wise
+
+		// Using this approach a replicate-refine can switch
+		// pay off functions as it switched type
+
+		// if one is a carnivore one must hunt which
+		// needs a different payoff function
+
+		// in nature stem cells can switch from one type to another
+		// cells turn into skin cells, liver cells and so on
+
 		typeChoice.put("TYPE", "HERBIVORE");
 		typeChoice.put("TYPE", "CARNIVORE");
-		
-		//timing choice
-		
-		timingChoice.put("TIMING CHOICE DO SOME ACTION AT CERTAIN TIME","100");
 
-		//personality preference, the payoff function likes apples!
-		
+		// timing choice
+
+		timingChoice.put("TIMING CHOICE DO SOME ACTION AT CERTAIN TIME", "100");
+
+		// personality preference, the payoff function likes apples!
+
 		personalityPreference.put("EAT_HERBIVORE", "APPLES");
-		
+
 		// game choices
 		choices.put("EAT_HERBIVORE", "CABBAGE");
 		choices.put("EAT_HERBIVORE", "CELEERY");
-		
+
 		choices.put("EAT_CARNIVORE", "MOUSE");
-		
-		//failed games
-		failedGames.put("EAT_CARNIVORE", "DODO");  //We cannot hunt Dodo as it is extinct
-		
+
+		// failed games
+		failedGames.put("EAT_CARNIVORE", "DODO"); // We cannot hunt Dodo as it
+													// is extinct
+
 		// current choice
-		preferredChoice.put("EAT_HERBIVORE", "CELERY"); //easiest to find
+		preferredChoice.put("EAT_HERBIVORE", "CELERY"); // easiest to find
 
 		// costs
 
@@ -79,7 +83,8 @@ public class CopyOfEatingGameFailedGamesCostsAndPayoff {
 
 		costs.put("EAT_LOCATE_CABBAGE", "60");
 		costs.put("EAT_LOCATE_CELERY", "50");
-		costs.put("EAT_HUNT_MOUSE", "500"); //We need a new type of game called hunting
+		costs.put("EAT_HUNT_MOUSE", "500"); // We need a new type of game called
+											// hunting
 
 		// the payoff to the system when it's theoretically eaten
 
@@ -128,8 +133,9 @@ public class CopyOfEatingGameFailedGamesCostsAndPayoff {
 			Thread.sleep(5000);
 		} catch (Exception e) {
 		}
-		
-		String choice = (String) CopyOfEatingGameFailedGamesCostsAndPayoff.preferredChoice.get("EAT");
+
+		String choice = (String) CopyOfEatingGameFailedGamesCostsAndPayoff.preferredChoice
+				.get("EAT");
 
 		Object determineCost = null;
 		Object determinePayout = null;
@@ -141,12 +147,11 @@ public class CopyOfEatingGameFailedGamesCostsAndPayoff {
 		// We imagine we run the program
 		// Right now we do nothing
 
-		System.out.println("I am "+CopyOfEatingGameFailedGamesCostsAndPayoff.age);
+		System.out.println("I am "
+				+ CopyOfEatingGameFailedGamesCostsAndPayoff.age);
 		age++;
-		
-		refine(PayoutResults);
-		
 
+		refine(PayoutResults);
 
 	}
 
