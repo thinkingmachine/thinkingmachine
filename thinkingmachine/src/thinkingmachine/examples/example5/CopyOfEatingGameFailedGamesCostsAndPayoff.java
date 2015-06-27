@@ -65,7 +65,7 @@ public class CopyOfEatingGameFailedGamesCostsAndPayoff {
 		personalityPreference.put("EAT_HERBIVORE", "APPLES");
 
 		// game choices
-		choices.put("EAT_HERBIVORE", "CABBAGE");
+		choices.put("EAT_HERBIVORE", "CABBAGE"); 
 		choices.put("EAT_HERBIVORE", "CELEERY");
 
 		choices.put("EAT_CARNIVORE", "MOUSE");
